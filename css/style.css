@@ -70,19 +70,17 @@
 
 .icon-box-primary,
 .icon-box-light {
-    position: relative;
-    padding: 0 0 10px 10px;
-    z-index: 1;
+  z-index: 0;
 }
 
 .icon-box-primary i,
 .icon-box-light i {
     font-size: 60px;
     line-height: 0;
+    
 }
 
-.icon-box-primary::before,
-.icon-box-light::before {
+.icon-box-primary::before {
     position: absolute;
     content: "";
     width: 35px;
@@ -94,13 +92,7 @@
     z-index: -1;
 }
 
-.icon-box-primary::before {
-    background: var(--bs-primary);
-}
 
-.icon-box-light::before {
-    background: var(--bs-light);
-}
 
 
 /*** Navbar ***/
@@ -171,6 +163,10 @@
         opacity: 1;
     }
 }
+    .container h1{
+        color: rgb(5, 5, 5);
+        font-size: px;
+    }
 
 
 /*** Header ***/
@@ -179,6 +175,7 @@
     .page-header {
         margin-top: 0px;
     }
+    
 }
 
 .carousel-caption {
@@ -219,9 +216,7 @@
         height: 100%;
         object-fit: cover;
     }
-    .f-size{
-        font-size:15px;
-    }
+   
 }
 
 .page-header {
@@ -291,6 +286,7 @@
     .about-fact.mt-n130 {
         margin-top: -130px;
     }
+    
 }
 
 .btn-play {
@@ -439,13 +435,6 @@
     color: var(--bs-white);
 }
 
-.service-item:hover .icon-box-primary::before {
-    background: var(--bs-dark);
-}
-
-.service-item:hover .icon-box-primary i {
-    color: var(--bs-white) !important;
-}
 
 
 /*** Team ***/
